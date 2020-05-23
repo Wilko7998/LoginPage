@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Aurometalsaurus"
+    tools:context=".PaymentActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Title"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="Socials: Update Subscription"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/BillingTitle"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/Title"
+                android:text="Billing Address"
+                android:textSize="25dp"/>
+
+            <CheckBox
+                android:id="@+id/checkFill"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/BillingTitle" />
+
+            <TextView
+                android:id="@+id/checkFillText"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@id/checkFill"
+                android:layout_below="@id/BillingTitle"
+                android:text="Select to fill entries with correlating profile data"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/Forename"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/checkFill"
+                android:inputType="textPersonName"
+                android:hint="Forename"/>
+
+            <TextView
+                android:id="@+id/forenameRequired"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/checkFill"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/Forename"
+                android:text="*"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/Surname"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Forename"
+                android:inputType="textPersonName"
+                android:hint="Surname"/>
+
+            <TextView
+                android:id="@+id/surnameRequired"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/forenameRequired"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/Surname"
+                android:text="*"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/Address1"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Surname"
+                android:inputType="text"
+                android:hint="Address Line 1"/>
+
+            <EditText
+                android:id="@+id/Address2"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Address1"
+                android:inputType="text"
+                android:hint="Address Line 2"/>
+
+            <EditText
+                android:id="@+id/Address3"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Address2"
+                android:inputType="text"
+                android:hint="Address Line 3"/>
+
+            <EditText
+                android:id="@+id/TownCity"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Address3"
+                android:inputType="text"
+                android:hint="Town/City"/>
+
+            <EditText
+                android:id="@+id/CountyState"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/TownCity"
+                android:inputType="text"
+                android:hint="County/State"/>
+
+            <EditText
+                android:id="@+id/Country"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/CountyState"
+                android:inputType="text"
+                android:hint="Country"/>
+
+            <EditText
+                android:id="@+id/Postcode"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Country"
+                android:inputType="textPostalAddress"
+                android:hint="Postcode"/>
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Postcode"
+                android:inputType="phone"
+                android:hint="Phone Number"/>
+
+            <EditText
+                android:id="@+id/EMail"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="E-Mail"
+                android:drawableLeft="@drawable/ic_action_user"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/Phone"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/PaymentDetails"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/EMail"
+                android:text="Payment Details"
+                android:textSize="25dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PaymentDetails">
+
+                <RadioButton
+                    android:id="@+id/CreditDebit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit/Debit Card"
+                    android:onClick="checkButton"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/PayPal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PayPal"
+                    android:onClick="checkButton"/>
+
+                <RadioButton
+                    android:id="@+id/GooglePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GooglePay"
+                    android:onClick="checkButton"/>
+                
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/PaymentSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioPayment"
+                android:text="Apply"/>
+
+            <EditText
+                android:id="@+id/CardName"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Name on Card"
+                android:layout_below="@id/PaymentSelection"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/CardNumber"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Card Number"
+                android:layout_below="@id/CardName"
+                android:inputType="number"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/CardExpire"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Expiry Date of Card"
+                android:layout_below="@id/CardNumber"
+                android:inputType="date"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/CardBack"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="CVV"
+                android:layout_below="@id/CardExpire"
+                android:inputType="number"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

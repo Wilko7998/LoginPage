@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Aurometalsaurus"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Title"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="Socials: Sign Up"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/Forename"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Title"
+                android:inputType="textPersonName"
+                android:hint="Forename"/>
+
+            <EditText
+                android:id="@+id/Surname"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Forename"
+                android:inputType="textPersonName"
+                android:hint="Surname"/>
+
+            <EditText
+                android:id="@+id/DateOfBirth"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Surname"
+                android:inputType="date"
+                android:hint="Date of Birth"/>
+
+            <EditText
+                android:id="@+id/Address1"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/DateOfBirth"
+                android:inputType="text"
+                android:hint="Address Line 1"/>
+
+            <EditText
+                android:id="@+id/Address2"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Address1"
+                android:inputType="text"
+                android:hint="Address Line 2"/>
+
+            <EditText
+                android:id="@+id/Address3"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Address2"
+                android:inputType="text"
+                android:hint="Address Line 3"/>
+
+            <EditText
+                android:id="@+id/TownCity"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Address3"
+                android:inputType="text"
+                android:hint="Town/City"/>
+
+            <EditText
+                android:id="@+id/CountyState"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/TownCity"
+                android:inputType="text"
+                android:hint="County/State"/>
+
+            <EditText
+                android:id="@+id/Country"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/CountyState"
+                android:inputType="text"
+                android:hint="Country"/>
+
+            <EditText
+                android:id="@+id/Postcode"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Country"
+                android:inputType="textPostalAddress"
+                android:hint="Postcode"/>
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_below="@id/Postcode"
+                android:inputType="phone"
+                android:hint="Phone Number"/>
+
+            <EditText
+                android:id="@+id/EMail"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="E-Mail"
+                android:drawableLeft="@drawable/ic_action_user"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/Phone"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ConfirmEMail"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Confirm E-Mail"
+                android:drawableLeft="@drawable/ic_action_user"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/EMail"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_action_pass"
+                android:background="#11000000"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_below="@id/ConfirmEMail"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ConfirmPassword"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_action_pass"
+                android:background="#11000000"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:layout_below="@id/Password"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/checkAll"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/ConfirmPassword"/>
+
+            <TextView
+                android:id="@+id/checkAllText"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@id/NewsSubscription"
+                android:layout_below="@id/ConfirmPassword"
+                android:text="Select to check all"
+                android:textSize="15dp"/>
+
+            <CheckBox
+                android:id="@+id/NewsSubscription"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/checkAll"/>
+
+            <TextView
+                android:id="@+id/check1Text"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@id/NewsSubscription"
+                android:layout_below="@id/checkAllText"
+                android:text="Select to receive news and updates"
+                android:textSize="15dp"/>
+
+            <CheckBox
+                android:id="@+id/TermsConditions"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/NewsSubscription"/>
+
+            <TextView
+                android:id="@+id/check2Text"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@id/TermsConditions"
+                android:layout_below="@id/check1Text"
+                android:text="Select to agree to terms and conditions"
+                android:textSize="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/TermsConditions"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="25dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/SignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Sign Up"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

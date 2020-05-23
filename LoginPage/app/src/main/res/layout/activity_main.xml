@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/Aurometalsaurus"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/Aurometalsaurus" />
+
+    <EditText
+        android:id="@+id/EMail"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="#11000000"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:inputType="textPersonName"
+        android:layout_below="@id/imageView"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/EMail"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/ForgottenPassword"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgotten Password?"
+        android:layout_below="@id/Password"
+        android:textSize="12dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ForgottenPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="25dp" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Login"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:layout_below="@id/Password"
+        android:textSize="18sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="150dp"
+        android:layout_below="@id/SignUp"/>
+
+</RelativeLayout>
